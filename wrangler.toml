@@ -3,6 +3,10 @@ name = "decap-proxy"
 main = "src/index.ts"
 compatibility_date = "2025-11-17"
 
+workers_dev = false
+route = { pattern = "cms.parul.ski", zone_name = "parul.ski", custom_domain = true }
+
+
 # optional: this worker template uses Web Crypto API natively and doesn't require
 # nodejs_compat you can add this flag if you need Node.js polyfills,
 # but please be aware that those polyfills may have vulnerabilities
